@@ -127,8 +127,6 @@ async function remove(req, res) {
     res.status(500).send({ error: error.message });
   }
 }
-
-// 📍 Muallifning barcha postlarini olish
 async function getPostsByUser(req, res) {
   try {
     const { user_id } = req.params;
@@ -150,3 +148,4 @@ async function getPostsByUser(req, res) {
 }
 
 export { getAll, getOne, create, update, remove, getPostsByUser };
+
